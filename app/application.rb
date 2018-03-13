@@ -11,7 +11,6 @@ class Application
       item = @@items.find{|i| i.name == item_name}
       binding.pry
         resp.write item.price
-      else
         resp.status = 404
         resp.write "Item not found"
       end
